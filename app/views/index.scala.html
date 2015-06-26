@@ -18,7 +18,7 @@
 				min-width: 1024px;
 				margin: auto;
 
-				background: url("@routes.Assets.At("image/KruskyKrab.jpg" )") no-repeat center fixed;
+				background: url("@routes.Assets.versioned("image/KruskyKrab.jpg" )") no-repeat center fixed;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -63,11 +63,11 @@
 			}
 
 			.hit {
-				background: url("@routes.Assets.At("images/SpongeBob.png")") no-repeat center center;
+				background: url("@routes.Assets.versioned("images/SpongeBob.png")") no-repeat center center;
 			}
 
 			.miss{
-				background: url("@routes.Assets.At( "images/SquidwardTentacles.png")") no-repeat center center;
+				background: url("@routes.Assets.versioned( "images/SquidwardTentacles.png")") no-repeat center center;
 			}
 
 		</style>
@@ -101,12 +101,12 @@
 			</table>
 
 			<audio controls>
-				<source src="@routes.Assets.At( "music/Raman.mp3" )" type="audio/mpeg" >
+				<source src="@routes.Assets.versioned( "music/Raman.mp3" )" type="audio/mpeg" >
 				Your browser doen not support the audio element.
 			</audio>
 
 		</div>
 
-		<script type="text/javascript" src="@routes.Assets.At("javascripts/battleship.js")"></script>
+		<script type="text/javascript" src="@routes.Assets.versioned("javascripts/battleship.js")"></script>
 	</body>
 </html>
