@@ -35,10 +35,10 @@ var model = {
 			if( index >= 0  ){
 				ship.hits[ index ] = "hits" ;
 				view.displayHit( guess );
-				view.displayMessage( "HIT!" );
+				view.displayMessage( "FIND!" );
 
 				if( this.isSunk( ship ) ){
-					view.displayMessage ( "You sank my battleship!");
+					view.displayMessage ( "You find me!");
 					this.shipsSunk ++ ;
 				}
 				return true;
@@ -111,7 +111,7 @@ var controller = {
 
 
 		if( hit && model.shipsSunk === model.numShips )
-			view.displayMessage( "You sank all my battleships in " + this.guesses + " guesses." );
+			view.displayMessage( "You find all SpongeBob in " + this.guesses + " guesses." );
 	} ,
 
 	processGuess : function ( guess ){
